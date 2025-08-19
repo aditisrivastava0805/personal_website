@@ -1,16 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --color-accent: #ede0d4;
+  --color-chamoisee: #a98467;
+  --color-umber: #6c584c;
+}
+
+
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  
+  .text-chamoisee {
+    color: var(--color-chamoisee);
+  }
+  
+  .text-umber {
+    color: var(--color-umber);
+  }
+  
+  .border-chamoisee\/30 {
+    border-color: color-mix(in srgb, var(--color-chamoisee) 30%, transparent);
+  }
+  
   body {
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Typography Hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 600; /* semibold */
+    letter-spacing: -0.025em; /* tighter tracking */
+  }
+
+  /* Body text with relaxed line-height */
+  p, div, span, li, td, th {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400; /* normal weight */
+    line-height: 1.7; /* relaxed line-height */
+  }
+
+  /* Ensure buttons and inputs use Inter */
+  button, input, textarea, select {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Specific heading sizes with proper tracking */
+  h1 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  h3 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
 }
