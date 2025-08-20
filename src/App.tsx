@@ -7,42 +7,34 @@
  * 3. Follow block wrapper pattern with space-y-6 md:space-y-8
  */
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import HomeContent from './components/content/HomeContent';
-import ProjectsContent from './components/content/ProjectsContent';
-import ExperienceContent from './components/content/ExperienceContent';
-import SkillsContent from './components/content/SkillsContent';
-import ContactContent from './components/content/ContactContent';
+import About from './pages/About';
+import ProjectsPage from './pages/Projects';
+import Experience from './pages/Experience';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-umber">
-      <Header />
-      <Hero />
-      
-      <main>
-        <section id="about" className="max-w-6xl mx-auto px-6 py-16 border-b border-umber/10">
-          <HomeContent />
-        </section>
-        
-        <section id="projects" className="max-w-6xl mx-auto px-6 py-16 border-b border-umber/10">
-          <ProjectsContent />
-        </section>
-        
-        <section id="experience" className="max-w-6xl mx-auto px-6 py-16 border-b border-umber/10">
-          <ExperienceContent />
-        </section>
-        
-        <section id="skills" className="max-w-6xl mx-auto px-6 py-16 border-b border-umber/10">
-          <SkillsContent />
-        </section>
-        
-        <section id="contact" className="max-w-6xl mx-auto px-6 py-16">
-          <ContactContent />
-        </section>
-      </main>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white text-umber">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+            </>
+          } />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
