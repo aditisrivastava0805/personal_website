@@ -1,6 +1,5 @@
 import PageHeader from '../PageHeader';
 import HeadingBlock from '../blocks/HeadingBlock';
-import TextBlock from '../blocks/TextBlock';
 import DividerBlock from '../blocks/DividerBlock';
 
 const ExperienceContent = () => {

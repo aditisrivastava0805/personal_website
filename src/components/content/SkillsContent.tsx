@@ -16,7 +16,7 @@ const SkillsContent = () => {
         My technical skills span full-stack development, systems programming, and DevOps practices. I'm constantly learning and exploring new technologies.
       </TextBlock>
 
-      <ToggleBlock title="Core Technologies" defaultOpen={true}>
+      <ToggleBlock title="Core Technologies">
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold mb-2">Programming Languages</h4>

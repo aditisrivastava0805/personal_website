@@ -1,7 +1,6 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-  const location = useLocation();
   
   const navItems = [
     { name: 'About', path: '/' },

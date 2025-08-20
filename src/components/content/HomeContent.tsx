@@ -1,5 +1,4 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
-import PageHeader from '../PageHeader';
 import TextBlock from '../blocks/TextBlock';
 import CalloutBlock from '../blocks/CalloutBlock';
 import ToggleBlock from '../blocks/ToggleBlock';

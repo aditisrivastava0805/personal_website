@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+
 
 interface TopbarProps {
   onCommandPalette: () => void;
@@ -8,15 +8,7 @@ interface TopbarProps {
 }
 
 const Topbar = ({ onCommandPalette, onToggleDarkMode, searchQuery, onSearchChange }: TopbarProps) => {
-  const [debouncedQuery, setDebouncedQuery] = useState(searchQuery);
 
-  // Debounce search input
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedQuery(searchQuery);
-    }, 200);
-    return () => clearTimeout(timer);
-  }, [searchQuery]);
 
   return (
     <header className="sticky top-0 z-30 border-b border-chamoisee/30 dark:border-gray-800 bg-white dark:bg-gray-950/70 backdrop-blur">
