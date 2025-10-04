@@ -23,7 +23,7 @@ const DatabaseTable = ({ columns, data }: DatabaseTableProps) => {
           {data.map((row, index) => (
             <tr
               key={index}
-              className="hover:bg-gray-100 dark:hover:bg-gray-900/60 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
+              className="hover:bg-pink/10 border-b border-gray-200 dark:border-gray-800 last:border-b-0 transition-colors"
             >
               {columns.map((column) => (
                 <td

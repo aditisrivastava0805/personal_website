@@ -11,24 +11,53 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-30 bg-parchment border-b border-umber/10">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-                        {/* Brand */}
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-umber flex items-center justify-center">
-                    <h1 className="text-lg font-serif font-semibold text-parchment">AS</h1>
-                  </div>
-                </div>
+    <header className="sticky top-0 z-30 bg-cream/90 backdrop-blur-md border-b border-umber/5">
+      <div className="max-w-7xl mx-auto px-8 py-6">
+        {/* Top Brand Line */}
+        <div className="text-center mb-4">
+          <div className="flex items-center justify-center space-x-3">
+            <div className="w-1 h-1 bg-pink rounded-full"></div>
+            <p className="text-sm text-warm-gray font-sans tracking-wider uppercase">Designed By</p>
+            <div className="w-1 h-1 bg-pink rounded-full"></div>
+          </div>
+        </div>
+        
+        {/* Main Header Content */}
+        <div className="flex items-center justify-between">
+          {/* Left Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-2 h-2 bg-pink rounded-full"></div>
+            <h1 className="highlight-script text-script-2xl text-umber">AS</h1>
+          </div>
+
+          {/* Center Brand */}
+          <div className="text-center">
+            <h2 className="highlight-serif text-serif-3xl md:text-serif-4xl font-bold text-umber tracking-tight">
+              Aditi Srivastava
+            </h2>
+          </div>
+
+          {/* Right CTA */}
+          <div className="flex items-center space-x-2">
+            <NavLink 
+              to="/contact"
+              className="font-sans text-sm text-warm-gray hover:text-pink transition-colors"
+            >
+              Get in touch
+            </NavLink>
+            <div className="w-2 h-2 bg-pink rounded-full"></div>
+          </div>
+        </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="flex items-center justify-center space-x-12 mt-6">
           {navItems.map((item) => (
             <NavLink
               key={item.name}
               to={item.path}
               className={({ isActive }) => 
-                `text-umber/70 hover:text-umber transition ${
-                  isActive ? 'text-umber' : ''
+                `font-sans text-sm text-warm-gray hover:text-pink transition-colors ${
+                  isActive ? 'text-pink' : ''
                 }`
               }
             >
@@ -36,16 +65,6 @@ const Header = () => {
             </NavLink>
           ))}
         </nav>
-
-        {/* CTA Button */}
-        <div className="flex items-center">
-          <NavLink 
-            to="/contact"
-            className="rounded-full bg-umber text-parchment px-4 py-2 font-medium hover:shadow transition-shadow"
-          >
-            Get in touch
-          </NavLink>
-        </div>
       </div>
     </header>
   );

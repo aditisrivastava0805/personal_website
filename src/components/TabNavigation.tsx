@@ -22,7 +22,7 @@ const TabNavigation = ({ activePage, onPageChange }: TabNavigationProps) => {
             className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
               activePage === tab.name
                 ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/25 scale-105'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:scale-105'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-pink/20 hover:text-pink hover:scale-105'
             } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
           >
             <span className="text-base text-chamoisee">{tab.icon}</span>

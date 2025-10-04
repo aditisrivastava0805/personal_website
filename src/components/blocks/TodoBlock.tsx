@@ -12,10 +12,10 @@ const TodoBlock = ({ children, defaultChecked = false }: TodoBlockProps) => {
     <div className="flex items-start gap-3">
       <button
         onClick={() => setChecked(!checked)}
-        className={`mt-1 w-4 h-4 rounded border-2 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+        className={`mt-1 w-4 h-4 rounded border-2 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink/40 focus:ring-offset-2 transition-colors ${
           checked
-            ? 'bg-blue-500 border-blue-500 text-white'
-            : 'border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
+            ? 'bg-pink border-pink text-cream'
+            : 'border-umber/30 hover:border-pink hover:bg-pink/10'
         }`}
       >
         {checked && (

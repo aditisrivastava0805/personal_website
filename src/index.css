@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
   --color-accent: #ede0d4;
   --color-chamoisee: #a98467;
   --color-umber: #6c584c;
+  --color-pink: #f4acb7;
+  --color-cream: #faf8f5;
+  --color-warm-gray: #8b7355;
 }
 
 
@@ -23,6 +30,14 @@
     background-color: var(--color-accent);
   }
   
+  .bg-cream {
+    background-color: var(--color-cream);
+  }
+  
+  .bg-pink {
+    background-color: var(--color-pink);
+  }
+  
   .text-chamoisee {
     color: var(--color-chamoisee);
   }
@@ -31,9 +46,239 @@
     color: var(--color-umber);
   }
   
+  .text-pink {
+    color: var(--color-pink);
+  }
+  
+  .text-warm-gray {
+    color: var(--color-warm-gray);
+  }
+  
   .border-chamoisee\/30 {
-  border-color: color-mix(in srgb, var(--color-chamoisee) 30%, transparent);
-}
+    border-color: color-mix(in srgb, var(--color-chamoisee) 30%, transparent);
+  }
+  
+  .border-pink {
+    border-color: var(--color-pink);
+  }
+  
+  .border-pink\/30 {
+    border-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+  }
+  
+  .border-pink\/50 {
+    border-color: color-mix(in srgb, var(--color-pink) 50%, transparent);
+  }
+  
+  .bg-pink\/10 {
+    background-color: color-mix(in srgb, var(--color-pink) 10%, transparent);
+  }
+  
+  .bg-pink\/20 {
+    background-color: color-mix(in srgb, var(--color-pink) 20%, transparent);
+  }
+  
+  .bg-pink\/30 {
+    background-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+  }
+  
+  .bg-pink\/40 {
+    background-color: color-mix(in srgb, var(--color-pink) 40%, transparent);
+  }
+  
+  .bg-pink\/60 {
+    background-color: color-mix(in srgb, var(--color-pink) 60%, transparent);
+  }
+  
+  .bg-pink\/90 {
+    background-color: color-mix(in srgb, var(--color-pink) 90%, transparent);
+  }
+  
+  .hover\:bg-pink\/10:hover {
+    background-color: color-mix(in srgb, var(--color-pink) 10%, transparent);
+  }
+  
+  .hover\:bg-pink\/20:hover {
+    background-color: color-mix(in srgb, var(--color-pink) 20%, transparent);
+  }
+  
+  .hover\:bg-pink\/90:hover {
+    background-color: color-mix(in srgb, var(--color-pink) 90%, transparent);
+  }
+  
+  .hover\:border-pink\/30:hover {
+    border-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+  }
+  
+  .hover\:border-pink\/50:hover {
+    border-color: color-mix(in srgb, var(--color-pink) 50%, transparent);
+  }
+  
+  .hover\:text-pink:hover {
+    color: var(--color-pink);
+  }
+  
+  .focus\:ring-pink\/40:focus {
+    --tw-ring-color: color-mix(in srgb, var(--color-pink) 40%, transparent);
+  }
+  
+  /* Pink Shadow Effects */
+  .shadow-pink {
+    box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--color-pink) 0.3, transparent), 0 2px 4px -1px color-mix(in srgb, var(--color-pink) 0.2, transparent);
+  }
+  
+  .shadow-pink-lg {
+    box-shadow: 0 20px 25px -5px color-mix(in srgb, var(--color-pink) 0.4, transparent), 0 10px 10px -5px color-mix(in srgb, var(--color-pink) 0.2, transparent), 0 0 0 1px color-mix(in srgb, var(--color-pink) 0.1, transparent);
+  }
+  
+  .hover\:shadow-pink:hover {
+    box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--color-pink) 0.3, transparent), 0 2px 4px -1px color-mix(in srgb, var(--color-pink) 0.2, transparent);
+  }
+  
+  .hover\:shadow-pink-lg:hover {
+    box-shadow: 0 20px 25px -5px color-mix(in srgb, var(--color-pink) 0.4, transparent), 0 10px 10px -5px color-mix(in srgb, var(--color-pink) 0.2, transparent), 0 0 0 1px color-mix(in srgb, var(--color-pink) 0.1, transparent);
+  }
+  
+  /* Wide Cast Pink Shadow */
+  .shadow-pink-gradient {
+    box-shadow: 
+      0 0 0 1px color-mix(in srgb, var(--color-pink) 0.2, transparent),
+      0 12px 24px -6px color-mix(in srgb, var(--color-pink) 0.3, transparent),
+      0 24px 48px -12px color-mix(in srgb, var(--color-pink) 0.4, transparent),
+      0 48px 96px -24px color-mix(in srgb, var(--color-pink) 0.5, transparent);
+  }
+  
+  .hover\:shadow-pink-gradient:hover {
+    box-shadow: 
+      0 0 0 1px color-mix(in srgb, var(--color-pink) 0.2, transparent),
+      0 12px 24px -6px color-mix(in srgb, var(--color-pink) 0.3, transparent),
+      0 24px 48px -12px color-mix(in srgb, var(--color-pink) 0.4, transparent),
+      0 48px 96px -24px color-mix(in srgb, var(--color-pink) 0.5, transparent);
+  }
+  
+  /* Hide scrollbar for carousel */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Floating gradient animation */
+  @keyframes floatGradient {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(-45%, -55%) rotate(90deg) scale(1.1);
+    }
+    50% {
+      transform: translate(-55%, -45%) rotate(180deg) scale(0.9);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(270deg) scale(1.05);
+    }
+  }
+
+  @keyframes floatGradient2 {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    33% {
+      transform: translate(-40%, -60%) rotate(120deg) scale(1.15);
+    }
+    66% {
+      transform: translate(-60%, -40%) rotate(240deg) scale(0.85);
+    }
+  }
+
+  .floating-gradient {
+    animation: floatGradient 20s ease-in-out infinite;
+  }
+
+  .floating-gradient-2 {
+    animation: floatGradient2 25s ease-in-out infinite;
+  }
+
+  /* Global background animation */
+  body {
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: 
+      radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--color-pink) 20%, transparent) 0%, transparent 60%),
+      radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--color-pink) 15%, transparent) 0%, transparent 60%),
+      radial-gradient(circle at 40% 60%, color-mix(in srgb, var(--color-pink) 12%, transparent) 0%, transparent 60%);
+  }
+  
+  /* Typography Classes */
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Old Money Font Pairing */
+  .font-old-money-script {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .font-old-money-serif {
+    font-family: 'Crimson Text', serif;
+  }
+
+  /* Highlight Classes with Old Money Fonts */
+  .highlight-script {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .highlight-serif {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* Size Variations */
+  .text-script-xs { font-size: 0.75rem; }
+  .text-script-sm { font-size: 0.875rem; }
+  .text-script-base { font-size: 1rem; }
+  .text-script-lg { font-size: 1.125rem; }
+  .text-script-xl { font-size: 1.25rem; }
+  .text-script-2xl { font-size: 1.5rem; }
+  .text-script-3xl { font-size: 1.875rem; }
+  .text-script-4xl { font-size: 2.25rem; }
+  .text-script-5xl { font-size: 3rem; }
+  .text-script-6xl { font-size: 3.75rem; }
+
+  .text-serif-xs { font-size: 0.75rem; }
+  .text-serif-sm { font-size: 0.875rem; }
+  .text-serif-base { font-size: 1rem; }
+  .text-serif-lg { font-size: 1.125rem; }
+  .text-serif-xl { font-size: 1.25rem; }
+  .text-serif-2xl { font-size: 1.5rem; }
+  .text-serif-3xl { font-size: 1.875rem; }
+  .text-serif-4xl { font-size: 2.25rem; }
+  .text-serif-5xl { font-size: 3rem; }
+  .text-serif-6xl { font-size: 3.75rem; }
 
 /* Scroll-triggered animations */
 @keyframes slideInFromBottom {
@@ -129,20 +374,21 @@
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-cream);
   }
 
   /* Typography Hierarchy */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 600; /* semibold */
-    letter-spacing: -0.025em; /* tighter tracking */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
 
   /* Body text with relaxed line-height */
   p, div, span, li, td, th {
     font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 400; /* normal weight */
-    line-height: 1.7; /* relaxed line-height */
+    font-weight: 400;
+    line-height: 1.7;
   }
 
   /* Ensure buttons and inputs use Inter */
@@ -164,5 +410,43 @@
   h3 {
     font-weight: 600;
     letter-spacing: -0.025em;
+  }
+  
+  /* Decorative Elements */
+  .curved-line {
+    position: relative;
+  }
+  
+  .curved-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-umber), transparent);
+    border-radius: 1px;
+    transform: translateY(-50%);
+  }
+  
+  .gradient-blob {
+    background: radial-gradient(circle, var(--color-pink) 0%, transparent 70%);
+    filter: blur(40px);
+    opacity: 0.3;
+  }
+  
+  .pink-underline {
+    position: relative;
+  }
+  
+  .pink-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-pink);
+    border-radius: 1px;
   }
 }

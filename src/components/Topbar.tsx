@@ -30,14 +30,14 @@ const Topbar = ({ onCommandPalette, onToggleDarkMode, searchQuery, onSearchChang
 
           <button
             onClick={onCommandPalette}
-            className="px-3 py-1.5 text-sm border border-chamoisee/30 dark:border-gray-800 rounded-lg bg-white dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="px-3 py-1.5 text-sm border border-chamoisee/30 dark:border-gray-800 rounded-lg bg-white dark:bg-gray-900 hover:bg-pink/10 hover:border-pink/30 focus:outline-none focus:ring-2 focus:ring-pink/40 focus:ring-offset-2 transition-colors"
           >
             ⌘K
           </button>
 
           <button
             onClick={onToggleDarkMode}
-            className="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="p-1.5 rounded-lg hover:bg-pink/10 focus:outline-none focus:ring-2 focus:ring-pink/40 focus:ring-offset-2 transition-colors"
           >
             🌙
           </button>

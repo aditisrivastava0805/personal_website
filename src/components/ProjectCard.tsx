@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="group relative rounded-2xl border border-umber/20 bg-white/90 shadow-sm hover:shadow-md transition hover:-translate-y-0.5 focus-within:shadow-md">
+    <div className="group relative rounded-2xl border border-umber/20 bg-white/90 shadow-sm hover:shadow-pink-gradient hover:border-pink/30 transition hover:-translate-y-0.5 focus-within:shadow-pink-gradient">
       {/* Preview image */}
       <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
         <img 
@@ -26,10 +26,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.title}
         </h3>
         
-        {/* Eye button */}
-        <button className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-umber/30 bg-white/80 backdrop-blur hover:bg-parchment/90 hover:border-umber/50 transition focus:outline-none focus:ring-2 focus:ring-umber/40">
+                {/* Eye button */}
+                <button className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-umber/30 bg-white/80 backdrop-blur hover:bg-pink/90 hover:border-pink/50 transition focus:outline-none focus:ring-2 focus:ring-pink/40">
           <svg 
-            className="h-5 w-5 text-umber" 
+            className="h-5 w-5 text-umber group-hover:text-cream" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"
