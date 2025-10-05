@@ -7,7 +7,6 @@ const FeaturedIn = () => {
     "GitHub",
     "Stack Overflow", 
     "Dev.to",
-    "Medium",
     "LinkedIn"
   ];
 
@@ -20,11 +19,8 @@ const FeaturedIn = () => {
       <div className="relative max-w-7xl mx-auto px-8">
         <div className="text-center mb-8">
           <h2 className="font-script text-2xl md:text-3xl text-cream mb-2">
-            Featured In
-          </h2>
-          <p className="font-sans text-cream/80 text-sm">
-            Recognized by leading tech communities
-          </p>
+            See my work
+          </h2>            
         </div>
 
         {/* Publications Grid */}

@@ -31,7 +31,7 @@ const ContactContent = () => {
             href="mailto:aditi@utexas.edu" 
             className="text-blue-600 dark:text-blue-400 hover:text-blue-800 hover:underline text-[15px]"
           >
-            aditi@utexas.edu
+            aditis584@utexas.edu
           </a>
           <p className="text-sm text-chamoisee dark:text-gray-400 mt-2">
             Best way to reach me for professional inquiries

@@ -8,19 +8,19 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Ericsson SWE Intern",
-      company: "BOS/vOSS-BSS",
+      title: "SWE & System Integration Intern",
+      company: "Ericsson BOS/vOSS-BSS",
       location: "Dallas",
       period: "2025",
       description: "Working on DevOps and GenAI modernization initiatives. Contributing to business operations support systems and network management solutions.",
       skills: ['DevOps', 'GenAI', 'Business Systems', 'Network Management']
     },
     {
-      title: "Analytics",
-      company: "Texas Guadaloop",
+      title: "Analytics & Research Intern",
+      company: "ACEing Autism",
       location: "Austin",
       period: "2024",
-      description: "Data analysis and performance optimization for hyperloop pod systems. Working with sensor data and real-time analytics.",
+      description: "Data analysis and performance optimization for autism-focused sports-based intervention techniques to improve participant outcomes. Worked with sensor data and real-time analytics.",
       skills: ['Data Analysis', 'Performance Optimization', 'Sensor Data', 'Real-time Analytics']
     }
   ];
