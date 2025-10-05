@@ -55,7 +55,7 @@
   }
   
   .border-chamoisee\/30 {
-    border-color: color-mix(in srgb, var(--color-chamoisee) 30%, transparent);
+    border-color: rgba(169, 132, 103, 0.3);
   }
   
   .border-pink {
@@ -63,55 +63,55 @@
   }
   
   .border-pink\/30 {
-    border-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+    border-color: rgba(244, 172, 183, 0.3);
   }
   
   .border-pink\/50 {
-    border-color: color-mix(in srgb, var(--color-pink) 50%, transparent);
+    border-color: rgba(244, 172, 183, 0.5);
   }
   
   .bg-pink\/10 {
-    background-color: color-mix(in srgb, var(--color-pink) 10%, transparent);
+    background-color: rgba(244, 172, 183, 0.1);
   }
   
   .bg-pink\/20 {
-    background-color: color-mix(in srgb, var(--color-pink) 20%, transparent);
+    background-color: rgba(244, 172, 183, 0.2);
   }
   
   .bg-pink\/30 {
-    background-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+    background-color: rgba(244, 172, 183, 0.3);
   }
   
   .bg-pink\/40 {
-    background-color: color-mix(in srgb, var(--color-pink) 40%, transparent);
+    background-color: rgba(244, 172, 183, 0.4);
   }
   
   .bg-pink\/60 {
-    background-color: color-mix(in srgb, var(--color-pink) 60%, transparent);
+    background-color: rgba(244, 172, 183, 0.6);
   }
   
   .bg-pink\/90 {
-    background-color: color-mix(in srgb, var(--color-pink) 90%, transparent);
+    background-color: rgba(244, 172, 183, 0.9);
   }
   
   .hover\:bg-pink\/10:hover {
-    background-color: color-mix(in srgb, var(--color-pink) 10%, transparent);
+    background-color: rgba(244, 172, 183, 0.1);
   }
   
   .hover\:bg-pink\/20:hover {
-    background-color: color-mix(in srgb, var(--color-pink) 20%, transparent);
+    background-color: rgba(244, 172, 183, 0.2);
   }
   
   .hover\:bg-pink\/90:hover {
-    background-color: color-mix(in srgb, var(--color-pink) 90%, transparent);
+    background-color: rgba(244, 172, 183, 0.9);
   }
   
   .hover\:border-pink\/30:hover {
-    border-color: color-mix(in srgb, var(--color-pink) 30%, transparent);
+    border-color: rgba(244, 172, 183, 0.3);
   }
   
   .hover\:border-pink\/50:hover {
-    border-color: color-mix(in srgb, var(--color-pink) 50%, transparent);
+    border-color: rgba(244, 172, 183, 0.5);
   }
   
   .hover\:text-pink:hover {
@@ -119,41 +119,41 @@
   }
   
   .focus\:ring-pink\/40:focus {
-    --tw-ring-color: color-mix(in srgb, var(--color-pink) 40%, transparent);
+    --tw-ring-color: rgba(244, 172, 183, 0.4);
   }
   
   /* Pink Shadow Effects */
   .shadow-pink {
-    box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--color-pink) 0.3, transparent), 0 2px 4px -1px color-mix(in srgb, var(--color-pink) 0.2, transparent);
+    box-shadow: 0 4px 6px -1px rgba(244, 172, 183, 0.3), 0 2px 4px -1px rgba(244, 172, 183, 0.2);
   }
   
   .shadow-pink-lg {
-    box-shadow: 0 20px 25px -5px color-mix(in srgb, var(--color-pink) 0.4, transparent), 0 10px 10px -5px color-mix(in srgb, var(--color-pink) 0.2, transparent), 0 0 0 1px color-mix(in srgb, var(--color-pink) 0.1, transparent);
+    box-shadow: 0 20px 25px -5px rgba(244, 172, 183, 0.4), 0 10px 10px -5px rgba(244, 172, 183, 0.2), 0 0 0 1px rgba(244, 172, 183, 0.1);
   }
   
   .hover\:shadow-pink:hover {
-    box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--color-pink) 0.3, transparent), 0 2px 4px -1px color-mix(in srgb, var(--color-pink) 0.2, transparent);
+    box-shadow: 0 4px 6px -1px rgba(244, 172, 183, 0.3), 0 2px 4px -1px rgba(244, 172, 183, 0.2);
   }
   
   .hover\:shadow-pink-lg:hover {
-    box-shadow: 0 20px 25px -5px color-mix(in srgb, var(--color-pink) 0.4, transparent), 0 10px 10px -5px color-mix(in srgb, var(--color-pink) 0.2, transparent), 0 0 0 1px color-mix(in srgb, var(--color-pink) 0.1, transparent);
+    box-shadow: 0 20px 25px -5px rgba(244, 172, 183, 0.4), 0 10px 10px -5px rgba(244, 172, 183, 0.2), 0 0 0 1px rgba(244, 172, 183, 0.1);
   }
   
   /* Wide Cast Pink Shadow */
   .shadow-pink-gradient {
     box-shadow: 
-      0 0 0 1px color-mix(in srgb, var(--color-pink) 0.2, transparent),
-      0 12px 24px -6px color-mix(in srgb, var(--color-pink) 0.3, transparent),
-      0 24px 48px -12px color-mix(in srgb, var(--color-pink) 0.4, transparent),
-      0 48px 96px -24px color-mix(in srgb, var(--color-pink) 0.5, transparent);
+      0 0 0 1px rgba(244, 172, 183, 0.2),
+      0 12px 24px -6px rgba(244, 172, 183, 0.3),
+      0 24px 48px -12px rgba(244, 172, 183, 0.4),
+      0 48px 96px -24px rgba(244, 172, 183, 0.5);
   }
   
   .hover\:shadow-pink-gradient:hover {
     box-shadow: 
-      0 0 0 1px color-mix(in srgb, var(--color-pink) 0.2, transparent),
-      0 12px 24px -6px color-mix(in srgb, var(--color-pink) 0.3, transparent),
-      0 24px 48px -12px color-mix(in srgb, var(--color-pink) 0.4, transparent),
-      0 48px 96px -24px color-mix(in srgb, var(--color-pink) 0.5, transparent);
+      0 0 0 1px rgba(244, 172, 183, 0.2),
+      0 12px 24px -6px rgba(244, 172, 183, 0.3),
+      0 24px 48px -12px rgba(244, 172, 183, 0.4),
+      0 48px 96px -24px rgba(244, 172, 183, 0.5);
   }
   
   /* Hide scrollbar for carousel */
@@ -166,60 +166,19 @@
     display: none;
   }
 
-  /* Floating gradient animation */
-  @keyframes floatGradient {
-    0%, 100% {
-      transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    25% {
-      transform: translate(-45%, -55%) rotate(90deg) scale(1.1);
-    }
-    50% {
-      transform: translate(-55%, -45%) rotate(180deg) scale(0.9);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(270deg) scale(1.05);
-    }
-  }
 
-  @keyframes floatGradient2 {
-    0%, 100% {
-      transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    33% {
-      transform: translate(-40%, -60%) rotate(120deg) scale(1.15);
-    }
-    66% {
-      transform: translate(-60%, -40%) rotate(240deg) scale(0.85);
-    }
-  }
-
-  .floating-gradient {
-    animation: floatGradient 20s ease-in-out infinite;
-  }
-
-  .floating-gradient-2 {
-    animation: floatGradient2 25s ease-in-out infinite;
-  }
-
-  /* Global background animation */
+  /* Static pink gradient background */
   body {
-    position: relative;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    background: 
-      radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--color-pink) 20%, transparent) 0%, transparent 60%),
-      radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--color-pink) 15%, transparent) 0%, transparent 60%),
-      radial-gradient(circle at 40% 60%, color-mix(in srgb, var(--color-pink) 12%, transparent) 0%, transparent 60%);
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.95) 0%, 
+      rgba(244, 172, 183, 0.4) 1%, 
+      rgba(255, 255, 255, 0.98) 25%, 
+      rgba(255, 255, 255, 0.96) 50%, 
+      rgba(244, 172, 183, 0.3) 65%, 
+      rgba(255, 255, 255, 0.97) 75%, 
+      rgba(255, 255, 255, 0.94) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
   
   /* Typography Classes */

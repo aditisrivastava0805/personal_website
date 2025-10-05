@@ -6,10 +6,6 @@ const BridgingTheGap = () => {
 
   return (
     <section className="relative max-w-7xl mx-auto px-8 py-20">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-pink/40 via-pink/25 to-pink/10 rounded-full blur-3xl floating-gradient"></div>
-      </div>
 
       <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left Column */}
@@ -18,7 +14,7 @@ const BridgingTheGap = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-2 h-2 bg-pink rounded-full"></div>
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-umber leading-tight">
+              <h2 className="highlight-serif text-serif-4xl md:text-serif-5xl font-semibold text-umber leading-tight">
                 Bridging the
                 <span className="block highlight-script text-pink text-script-3xl md:text-script-4xl pink-underline">
                   Gap

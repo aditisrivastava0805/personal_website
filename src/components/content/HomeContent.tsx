@@ -68,36 +68,7 @@ const HomeContent = () => {
 
   return (
     <div className="space-y-12">
-      {/* Main Description */}
-      <SectionCard>
-        <div className="space-y-4">
-          <div className="flex items-center space-x-3">
-            <div className="w-2 h-2 bg-pink rounded-full"></div>
-            <h2 className="font-serif text-2xl text-umber">About Me</h2>
-          </div>
-          <p className="font-sans text-warm-gray leading-relaxed">
-            UT Austin CS. Shipping software across backend, AI tooling, and product engineering.
-          </p>
-        </div>
-      </SectionCard>
-
-      {/* Call to Action */}
-      <SectionCard>
-        <div className="text-center space-y-4">
-          <div className="flex items-center justify-center space-x-4">
-            <div className="w-2 h-2 bg-pink rounded-full"></div>
-            <p className="font-sans text-sm text-warm-gray tracking-wider uppercase">
-              Open to Summer 2026 roles
-            </p>
-            <div className="w-2 h-2 bg-pink rounded-full"></div>
-          </div>
-          <div className="flex items-center justify-center space-x-2">
-            <div className="w-8 h-px bg-pink/30"></div>
-            <div className="w-1 h-1 bg-pink rounded-full"></div>
-            <div className="w-8 h-px bg-pink/30"></div>
-          </div>
-        </div>
-      </SectionCard>
+      
 
       {/* Skills Carousel */}
       <div ref={skillsRef} className="animate-on-scroll">

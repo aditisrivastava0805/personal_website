@@ -7,12 +7,6 @@ const Hero = () => {
 
   return (
     <section className="relative max-w-7xl mx-auto px-8 py-16">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-20 w-80 h-80 bg-gradient-to-br from-pink/35 via-pink/20 to-pink/8 rounded-full blur-3xl floating-gradient"></div>
-        <div className="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-tr from-pink/30 via-pink/18 to-pink/6 rounded-full blur-2xl floating-gradient-2"></div>
-        <div className="absolute top-1/3 left-1/3 w-48 h-48 bg-gradient-to-bl from-pink/25 via-pink/15 to-pink/5 rounded-full blur-2xl floating-gradient"></div>
-      </div>
       
       <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left Column - Text */}
@@ -28,14 +22,14 @@ const Hero = () => {
           
           {/* Main Title */}
           <div className="space-y-4">
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-umber leading-tight">
-              Building
-              <span className="block highlight-script text-pink text-script-4xl md:text-script-5xl lg:text-script-6xl pink-underline">
-                useful systems
+            <h1 className="highlight-serif text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold text-umber leading-none">
+              Aditi
+              <span className="block highlight-script text-pink text-5xl md:text-6xl lg:text-7xl xl:text-9xl pink-underline ">
+                Srivastava
               </span>
             </h1>
-            <p className="font-sans text-lg text-warm-gray max-w-lg leading-relaxed">
-              with clean code and clear thinking.
+            <p className="font-serif text-lg text-warm-gray max-w-lg leading-relaxed mt-8">
+              Building meaningful, efficient, and scalable systems.
             </p>
           </div>
           
@@ -45,14 +39,14 @@ const Hero = () => {
               to="/contact"
               className="group relative bg-umber text-cream px-8 py-4 font-sans font-medium transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
-              <span className="relative z-10">Let's chat!</span>
+              <span className="font-sans relative z-10 tracking-wide">Let's chat!</span>
               <div className="absolute inset-0 bg-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             <Link 
               to="/projects"
               className="group relative border-2 border-pink text-umber px-8 py-4 font-sans font-medium transition-all duration-300 hover:bg-pink hover:text-cream"
             >
-              <span className="relative z-10">See my work</span>
+              <span className="font-sans relative z-10 tracking-wide">See my work</span>
               <div className="absolute inset-0 bg-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           </div>
@@ -60,17 +54,17 @@ const Hero = () => {
 
         {/* Right Column - Image */}
         <div ref={imageRef} className="relative animate-on-scroll-right">
-          <div className="relative">
+          <div className="relative group cursor-pointer transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-pink-gradient">
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
                 src="/me.jpeg" 
                 alt="Aditi Srivastava" 
-                className="w-full h-[500px] object-cover" 
+                className="w-full h-[500px] object-cover transition-all duration-500 group-hover:scale-110" 
                 loading="lazy" 
               />
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-umber/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-umber/20 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
             </div>
             
             {/* Decorative Elements */}

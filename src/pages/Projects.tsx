@@ -1,14 +1,10 @@
-import PageLayout from '../components/PageLayout';
-import Projects from '../components/Projects';
+import ProjectsCarousel from '../components/ProjectsCarousel';
 
 const ProjectsPage = () => {
   return (
-    <PageLayout 
-      title="Projects" 
-      subtitle="A showcase of my work in software engineering, from full-stack applications to system design."
-    >
-      <Projects />
-    </PageLayout>
+    <div className="min-h-screen bg-gradient-to-br from-pink/5 to-white">
+      <ProjectsCarousel />
+    </div>
   );
 };
 

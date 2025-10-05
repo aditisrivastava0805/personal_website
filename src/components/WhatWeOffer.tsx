@@ -25,19 +25,17 @@ const WhatWeOffer = () => {
 
   return (
     <section ref={sectionRef} className="relative max-w-7xl mx-auto px-8 py-20 animate-on-scroll">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 w-56 h-56 bg-gradient-to-br from-pink/28 via-pink/16 to-pink/6 rounded-full blur-2xl floating-gradient"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-tr from-pink/25 via-pink/12 to-pink/4 rounded-full blur-xl floating-gradient-2"></div>
-      </div>
 
       <div className="relative">
         {/* Section Title */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-4">
             <div className="w-2 h-2 bg-pink rounded-full"></div>
-            <h2 className="highlight-script text-script-4xl md:text-script-5xl text-umber">
-              What I Offer
+            <h2 className="highlight-script text-script-4xl md:text-script-5xl font-semibold text-umber leading-tight">
+              What I
+              <span className="block highlight-serif text-serif-3xl md:text-serif-4xl text-umber">
+                Offer
+              </span>
             </h2>
             <div className="w-2 h-2 bg-pink rounded-full"></div>
           </div>
@@ -86,18 +84,6 @@ const WhatWeOffer = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <p className="font-sans text-sm text-warm-gray mb-4">Ready to work together?</p>
-          <div className="flex items-center justify-center space-x-2">
-            <div className="w-8 h-px bg-pink/30"></div>
-            <div className="w-2 h-2 bg-pink rounded-full"></div>
-            <span className="highlight-script text-script-lg text-pink">Let's build something amazing</span>
-            <div className="w-2 h-2 bg-pink rounded-full"></div>
-            <div className="w-8 h-px bg-pink/30"></div>
-          </div>
         </div>
       </div>
     </section>

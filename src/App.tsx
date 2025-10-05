@@ -19,7 +19,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-            <div className="min-h-screen bg-cream text-umber">
+            <div className="min-h-screen text-umber">
         <Header />
         <Routes>
           <Route path="/" element={
