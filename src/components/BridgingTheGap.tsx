@@ -78,7 +78,7 @@ const BridgingTheGap = () => {
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="/me.jpeg" 
+                src="/me2.jpeg" 
                 alt="Aditi Srivastava working" 
                 className="w-full h-[400px] object-cover" 
                 loading="lazy" 
